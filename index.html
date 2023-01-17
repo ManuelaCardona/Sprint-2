@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sprint 2</title>
+</head>
+<body>
+    <img class="img" src="../Sprint 2/img/bg-main-desktop.png.png" alt="inicio"/>
+    <img class="imgMobile" src="./img/bg-main-mobile.png" alt="">
+    <form id="formulario">  <br/>
+        <fieldset id="form"> 
+            <label for="Nombre de usuario"> CARDHOLDER NAME </label>
+            <input type="text" placeholder="e.g Jane Appleseed" id="name" required>
+            <div id="error_cardName" class="error"> </div>
+            <label for="Contraseña"> CARD NUMBER </label>
+            <input type="text" placeholder="e.g 1234 5678 9123 0000" id="numFront" required>
+            <div id="error_cardNumber" class="error"> </div>
+
+
+            <div class="text ">
+            <label class="dayText">EXP. DATE (MM/YY)</label>
+            <label class="cvcText" for="">CVC</label>
+          </div>
+
+
+
+
+            <div class="input_container">
+              <div class="input_div">
+
+                <input class="day" type="text" id="month" maxlength="2" placeholder="MM">
+                <div id="error_cardMonth" class="error"> </div>   
+              </div>
+              <div class="input_div">
+                <label class="dayText"></label>
+                <input class="month" type="text" id="year" maxlength="2" placeholder="MM">
+                <div id="error_cardYear" class="error"> </div>
+              </div>
+
+              <div class="input_div">
+                <input class="cvc" type="text" id="cvc" maxlength="3" placeholder="e.g 123">
+                <div id="error_cardCvc" class="error"> </div>
+              </div>
+            </div>
+
+            <!-- <div class="container">
+                <div class="rowLabel">
+                    <div class="col-xs-12 col-md-3">
+                      <div class="form-group">
+                        <div class="input-group">
+                            <label class="dayText" for="Contraseña"> EXP.DATE (MM/YY)</label>
+                            <label class="cvcText" for="Contraseña"> CVC</label>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                        <input class="month" type="text" maxlength="2" placeholder="YY" id="year" required>
+                        <div id="error_cardYear"> </div>
+                      </div>
+                      <input class="cvc" type="text" maxlength="3" placeholder="e.g.123" id="cvc" required> 
+                      <div id="error_cardCvc"> </div> -->
+
+
+
+                    <!-- </div>
+                  </div>
+                </div>
+              </div> -->
+              <br><button type="submit" id="btn" value="Confirm">Confirm</button>
+        </fieldset>
+    </form>
+    <div id="cardFront">
+        <img id="imgCard" src="./img/bg-card-front.png.png" alt="">
+        <p id="cardNum">  0000 0000 0000 0000</p>
+        <div class="card-front-info">
+          <p id="cardName">JANE APPLESEED</p>
+          <p> <span id="cardMonth">00</span> <span class="bar">/</span> <span id="cardYear">00</span></p>
+        </div>
+    </div>
+    <img id="imgCard2" src="./img/card-logo.svg" alt="">
+    <div id="cardBack">
+        <img id="imgBack" src="./img/bg-card-back.png.png" alt="">
+        <p id="cardNum2" >000</p>
+    </div>
+    <section>
+      <div class="section sectionNone" id="thanks">
+        <img class="thanksImg" src="./img/icon-complete.svg" alt="chechk icon"> <br>
+        <h1 class="thanksTitle">THANK YOU!</h1>
+        <p class="thanksText">We've added your card details</p> <br>
+        <button class="thanksBtn">Continue</button> <br>
+      </div>
+      </section>
+      
+    <script src="./main.js"></script>
+</body>
+</html>

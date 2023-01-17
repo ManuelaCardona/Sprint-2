@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow&family=Fraunces:opsz@9..144&family=Noto+Serif&family=Space+Grotesk:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.img {
+    height: 800px;
+    width: 350px;
+    float: left;
+}
+
+.imgMobile {
+    display: none;
+}
+
+#cardFront{
+    text-transform: uppercase;
+}
+
+#form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 310px;
+    border: none;
+    padding: 200px 0 0 0;
+    outline: none;
+}
+
+.input_div{
+    display: flex;
+    flex-direction:column;
+  }
+  
+  .input_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+
+#form input {
+    padding: 5px 10px;
+    font-size: 1.1rem;;
+    border-radius: 7px;
+    border-color: beige;
+    outline: none;
+}
+
+#form input::placeholder {
+    color: rgba(210, 211, 211, 0.959);
+}
+
+#form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 16px;
+}
+
+.inputs_date {
+    display: flex;
+    gap: 10px;
+  }
+
+.error {
+    color: hsl(0, 100%, 66%);
+    margin: 0px 0 18px;
+    font-size: 12px;
+}
+
+ #error_cardMonth{
+    padding: 10px;
+}
+
+#error_cardYear{
+    padding: 10px;
+}
+
+#error_cardCvc{
+    padding: 10px;
+}
+
+
+.input-group {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    outline: none;
+    border-radius: 7px;
+}
+
+.day {
+    width: 50px;
+    margin-right: 8px;
+}
+
+.month {
+    width: 50px;
+    margin-right: 60px;
+}
+
+.cvc {
+    display: flex;
+    flex-direction: row;
+    width: 138px;
+}
+
+.text{
+    display: flex;
+    gap: 60px;
+}
+
+.dayText {
+    margin-right: 40px;
+    
+}
+
+.rowLabel {
+    display: flex;
+    justify-content: left;
+}
+
+#btn {
+    background-color: hsl(278, 68%, 11%);
+    color: #fff;
+    height: 40px;
+    border-radius: 10px;
+    font-family: space Grotesk;
+    font-size: 15px;
+}
+
+#imgBack {
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    top: 380px;
+    left: 195px;
+    height: 200px;
+}
+
+#imgCard {
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    top: 150px;
+    left: 110px;
+    height: 200px;
+}
+
+#imgCard2 {
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    top: 155px;
+    left: 115px;
+    padding: 20px 0 0 20px;
+    height: 40px;
+}
+
+#form label{
+    font-family: space Grotesk;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#cardName {
+    position: absolute;
+    display: flex;
+    font-family: space Grotesk;
+    font-weight: 300;
+    top: 310px;
+    left: 138px;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+#cardMonth {
+    position: absolute;
+    display: flex;
+    font-family: space Grotesk;
+    font-weight: 300;
+    top: 310px;
+    left: 410px;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+#cardYear {
+    position: absolute;
+    display: flex;
+    font-family: space Grotesk;
+    font-weight: 300;
+    top: 310px;
+    left: 437px;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+.bar {
+    position: absolute;
+    display: flex;
+    font-family: space Grotesk;
+    font-weight: 300;
+    top: 310px;
+    left: 430px;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+#cardNum {
+    position: absolute;
+    display: flex;
+    font-family: space Grotesk;
+    font-weight: 400;
+    top: 260px;
+    left: 138px;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 3.5px;
+}
+
+#cardNum2 {
+    position: absolute;
+    display: flex;
+    font-family: space Grotesk;
+    font-weight: 300;
+    top: 470px;
+    left: 490px;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+.sectionNone{
+    visibility: hidden;
+}
+
+#thanks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 800px;
+    top: 300px;
+    gap: 10px;
+}
+
+.section{
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.thanksImg{
+    width: 70px;
+}
+
+.thanksText{
+    font-family: space Grotesk;
+    color: gray;
+}
+
+.thanksTitle{
+    font-family: space Grotesk;
+    font-weight: 300px;
+    letter-spacing: 3px;
+}
+
+.thanksBtn {
+    background-color: hsl(278, 68%, 11%);
+    color: #fff;
+    width: 350px;
+    height: 40px;
+    border-radius: 7px;
+    font-family: space Grotesk;
+    font-size: 15px;
+}
+
+.notHidden {
+    display: block !important;
+}
+
+@media (max-width: 600px) {
+
+    #form {
+        margin: 35px;
+        display: flex;
+        padding: 60px 0 0 0;
+        justify-content: left;
+        flex-direction: column;
+        gap: 10px;
+        width: 310px;
+        border: none;
+        outline: none;
+    }
+
+    form input{
+        width: 460px;
+        height: 37px;
+        color: rgba(210, 211, 211, 0.757);
+        border-width: 3px;
+    }
+
+    #form input::placeholder {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .imgMobile {
+        display: block;
+        width: 590px;
+        height: 350px;
+    }
+
+    #imgCard {
+        display: flex;
+        position:absolute;
+        top: 181px;
+        left: 27px;
+        z-index: 1;
+        box-shadow: 0px 30px 20px 0px rgba(67, 69, 69, 0.177);
+    }
+
+    #imgCard2 {
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        top: 187px;
+        left: 30px;
+    }
+
+    #imgBack{
+        width: 440px;
+        height: 250px;
+        top: 40px;
+        left: 110px;
+        display: flex;
+        position:absolute;
+    }
+
+    #cardName {
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        top: 355px;
+        left: 50px;
+    }
+
+    #cardNum {
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        top: 295px;
+        left: 50px;
+    }
+
+    #cardNum2 {
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        left: 470px;
+        top: 153px;
+    }
+
+    #cardMonth {
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        top: 355px;
+        left: 347px;
+    }
+
+    #cardYear {
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        top: 355px;
+        left: 374px;        
+    }
+
+    .bar {
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        top: 354px;
+        left: 366.5px;
+    }
+
+    .input-group {
+        display: flex;
+        justify-content: left;
+    }
+
+    .day {
+        display: flex;
+        width: 60px;
+        margin-right: 8px;
+    }
+    
+    .month {
+        width: 60px;
+        margin-right: 50px;
+    }
+    
+    .cvc {
+        width: 220px;
+    }
+
+    .dayText {
+        margin-right: 60px;
+        
+    }
+
+    #btn {
+        margin-right: auto;
+        margin-left: auto;
+        width: 470px;
+        height: 50px;
+        border-radius: 8px;
+        font-family: space Grotesk;
+        font-size: 15px;
+    }
+
+    #thanks{
+        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 110px;
+        top: 450px;
+        gap: 10px;
+    }
+
+    .thanksBtn {
+        width: 350px;
+        height: 50px;
+    }
+
+}
